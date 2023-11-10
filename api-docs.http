@@ -1,5 +1,5 @@
-@baseurl = http://localhost:5001
-
+# @baseurl = http://localhost:5001
+@baseurl = https://embersense-be-py.vercel.app
 
 ### recommend by count - square
 POST {{baseurl}}/recommend-by-count 
