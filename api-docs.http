@@ -1,0 +1,67 @@
+@baseurl = http://localhost:5001
+
+
+### recommend by count - square
+POST {{baseurl}}/recommend-by-count 
+Content-Type: application/json
+
+{
+  "polygon": [
+    [0,0],
+    [0,10],
+    [10,10],
+    [10,0]
+  ],
+  "count": 100,
+  "degree": 20,
+  "pattern": "square"
+}
+
+### recommend by count - triangle
+POST {{baseurl}}/recommend-by-count 
+Content-Type: application/json
+
+{
+  "polygon": [
+    [0,0],
+    [0,10],
+    [10,10],
+    [10,0]
+  ],
+  "count": 100,
+  "degree": 20,
+  "pattern": "triangle"
+}
+
+
+### recommend by distance - square
+POST {{baseurl}}/recommend-by-distance 
+Content-Type: application/json
+
+{
+  "polygon": [
+    [0,0],
+    [0,10],
+    [10,10],
+    [10,0]
+  ],
+  "node_length": 2,
+  "degree": 20,
+  "pattern": "square"
+}
+
+### recommend by distance - triangle
+POST {{baseurl}}/recommend-by-distance 
+Content-Type: application/json
+
+{
+  "polygon": [
+    [0,0],
+    [0,10],
+    [10,10],
+    [10,0]
+  ],
+  "node_length": 2,
+  "degree": 20,
+  "pattern": "triangle"
+}
